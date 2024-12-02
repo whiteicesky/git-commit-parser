@@ -25,8 +25,9 @@ JAR-файл и Java Development Kit (файлы формата JAR запуск
 
 Основной файл, который запускает программу и координирует ее работу, использует 3 вспомогательных модуля и файл конфигурации:
 1. main.py - модуль, который парсит папки git-репозитория и извлекает из них информацию, а также строит по этой информации файл graph.puml.
-3. visualizer.py - модуль, обрабатывающий graph.puml файл. Инициализируется с путями к .jar файлу и java, создает изображение, представляющее диаграмму
-4. config.toml - конфигурационный файл, в котором указывается путь до .jar файла и java, а также дата с которой необходимо отслеживать коммиты.
+2. visualizer.py - модуль, обрабатывающий graph.puml файл. Инициализируется с путями к .jar файлу и java, создает изображение, представляющее диаграмму
+3. config.toml - конфигурационный файл, в котором указывается путь до .jar файла и java, а также дата с которой необходимо отслеживать коммиты.
+4. plantuml.jar - исполняемый jar файл
    
 ## Запуск
 Запуск программы поддерживается как из командной строки так и из среды разработки. 
@@ -34,14 +35,14 @@ JAR-файл и Java Development Kit (файлы формата JAR запуск
 2. Запускаем main.py
 3. Созданный .puml файл:
    
-  ![Screenshot 1](https://github.com/whiteicesky/commit-parser/blob/master/Screenshot_1.png)
+  ![Screenshot 1](https://github.com/whiteicesky/git-commit-parser/blob/main/Screenshot_1.png)
 
 4. Созданная диаграмма:
    
-  ![Screenshot 2](https://github.com/whiteicesky/commit-parser/blob/master/output.png)
+  ![Screenshot 2](https://github.com/whiteicesky/git-commit-parser/blob/main/Screenshot_2.png)
 
 ## Тесты
 Результат тестов:
 
-![Screenshot 2](https://github.com/whiteicesky/commit-parser/blob/master/Screenshot_4.png)
+![Screenshot 2](https://github.com/whiteicesky/git-commit-parser/blob/main/Screenshot_3.png)
 
