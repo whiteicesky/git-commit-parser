@@ -91,21 +91,16 @@ def generate_uml(filename):
         recursive_write(file, tree, set())
         file.write('@enduml')
 
-# Загружаем конфигурацию
 with open('config.toml', 'r') as f:
     config = toml.load(f)
 
-# Преобразуем дату из конфигурации
 config['settings']['date_filter'] = datetime.strptime(config['settings']['date_filter'], "%Y-%m-%d")
 
-# Генерация графа
 generate_uml('graph.puml')
 
-# Проверка содержимого graph.puml
 with open('graph.puml', 'r') as f:
     print(f.read())
 
-# Визуализация PlantUML
 visualizer_path = os.path.join(config['settings']['visualizer_path'])
 visualizer = Visualizer(visualizer_path)
 try:
