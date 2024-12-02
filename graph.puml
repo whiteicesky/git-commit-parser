@@ -1,0 +1,17 @@
+@startuml
+    "[commit] 02d256" --> "[tree] 373171"
+    "[tree] 373171" --> "[tree] 69a9cb" : __pycache__
+    "[tree] 69a9cb" : __pycache__ --> "[blob] 704b88" : visualizer.cpython-311.pyc
+    "[tree] 373171" --> "[blob] 97c642" : config.toml
+    "[tree] 373171" --> "[blob] cf1bef" : graph.png
+    "[tree] 373171" --> "[blob] 76802f" : graph.puml
+    "[tree] 373171" --> "[blob] b815d6" : main2.py
+    "[tree] 373171" --> "[blob] bdecdd" : plantuml.jar
+    "[tree] 373171" --> "[blob] ebe1f8" : visualizer.py
+    "[commit] 02d256" --> "[commit] 37e370"
+    "[commit] 37e370" --> "[tree] 937ffe"
+    "[tree] 937ffe" --> "[blob] eb7754" : config.json
+    "[tree] 937ffe" --> "[blob] 4e1463" : config.toml
+    "[tree] 937ffe" --> "[blob] b14e34" : main.py
+    "[tree] 937ffe" --> "[blob] dc1e56" : main2.py
+@enduml
