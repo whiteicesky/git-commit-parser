@@ -1,6 +1,6 @@
 @startuml
-    "[commit] bb9289" --> "[tree] 14f3ff"
-    "[tree] 14f3ff" --> "[tree] e6510b" : .idea
+    "[commit] c202d0" --> "[tree] 5ed32d"
+    "[tree] 5ed32d" --> "[tree] e6510b" : .idea
     "[tree] e6510b" : .idea --> "[blob] 26d335" : .gitignore
     "[tree] e6510b" : .idea --> "[blob] 061163" : homework2.iml
     "[tree] e6510b" : .idea --> "[tree] 97824e" : inspectionProfiles
@@ -8,13 +8,29 @@
     "[tree] e6510b" : .idea --> "[blob] 293396" : misc.xml
     "[tree] e6510b" : .idea --> "[blob] de0054" : modules.xml
     "[tree] e6510b" : .idea --> "[blob] 94a25f" : vcs.xml
-    "[tree] 14f3ff" --> "[tree] 69a9cb" : __pycache__
+    "[tree] 5ed32d" --> "[blob] 213753" : README.md
+    "[tree] 5ed32d" --> "[tree] 69a9cb" : __pycache__
     "[tree] 69a9cb" : __pycache__ --> "[blob] 704b88" : visualizer.cpython-311.pyc
-    "[tree] 14f3ff" --> "[blob] e98e53" : config.toml
-    "[tree] 14f3ff" --> "[blob] 75c4ad" : graph.png
-    "[tree] 14f3ff" --> "[blob] 5d908e" : graph.puml
-    "[tree] 14f3ff" --> "[blob] e04542" : main.py
-    "[tree] 14f3ff" --> "[blob] b815d6" : main2.py
-    "[tree] 14f3ff" --> "[blob] bdecdd" : plantuml.jar
-    "[tree] 14f3ff" --> "[blob] ebe1f8" : visualizer.py
+    "[tree] 5ed32d" --> "[blob] e98e53" : config.toml
+    "[tree] 5ed32d" --> "[blob] c4dd83" : graph.png
+    "[tree] 5ed32d" --> "[blob] a8cfa4" : graph.puml
+    "[tree] 5ed32d" --> "[blob] e04542" : main.py
+    "[tree] 5ed32d" --> "[blob] b815d6" : main2.py
+    "[tree] 5ed32d" --> "[blob] bdecdd" : plantuml.jar
+    "[tree] 5ed32d" --> "[blob] ebe1f8" : visualizer.py
+    "[commit] c202d0" --> "[commit] 0bcbba"
+    "[commit] 0bcbba" --> "[tree] 29dc92"
+    "[tree] 29dc92" --> "[tree] e6510b" : .idea
+    "[tree] 29dc92" --> "[blob] 213753" : README.md
+    "[tree] 29dc92" --> "[tree] 69a9cb" : __pycache__
+    "[tree] 29dc92" --> "[blob] e98e53" : config.toml
+    "[tree] 29dc92" --> "[blob] 75c4ad" : graph.png
+    "[tree] 29dc92" --> "[blob] 5d908e" : graph.puml
+    "[tree] 29dc92" --> "[blob] e04542" : main.py
+    "[tree] 29dc92" --> "[blob] b815d6" : main2.py
+    "[tree] 29dc92" --> "[blob] bdecdd" : plantuml.jar
+    "[tree] 29dc92" --> "[blob] ebe1f8" : visualizer.py
+    "[commit] 0bcbba" --> "[commit] 741365"
+    "[commit] 741365" --> "[tree] 1b55f6"
+    "[tree] 1b55f6" --> "[blob] 213753" : README.md
 @enduml
