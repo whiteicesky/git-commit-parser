@@ -1,17 +1,20 @@
 @startuml
-    "[commit] 02d256" --> "[tree] 373171"
-    "[tree] 373171" --> "[tree] 69a9cb" : __pycache__
+    "[commit] bb9289" --> "[tree] 14f3ff"
+    "[tree] 14f3ff" --> "[tree] e6510b" : .idea
+    "[tree] e6510b" : .idea --> "[blob] 26d335" : .gitignore
+    "[tree] e6510b" : .idea --> "[blob] 061163" : homework2.iml
+    "[tree] e6510b" : .idea --> "[tree] 97824e" : inspectionProfiles
+    "[tree] 97824e" : inspectionProfiles --> "[blob] 105ce2" : profiles_settings.xml
+    "[tree] e6510b" : .idea --> "[blob] 293396" : misc.xml
+    "[tree] e6510b" : .idea --> "[blob] de0054" : modules.xml
+    "[tree] e6510b" : .idea --> "[blob] 94a25f" : vcs.xml
+    "[tree] 14f3ff" --> "[tree] 69a9cb" : __pycache__
     "[tree] 69a9cb" : __pycache__ --> "[blob] 704b88" : visualizer.cpython-311.pyc
-    "[tree] 373171" --> "[blob] 97c642" : config.toml
-    "[tree] 373171" --> "[blob] cf1bef" : graph.png
-    "[tree] 373171" --> "[blob] 76802f" : graph.puml
-    "[tree] 373171" --> "[blob] b815d6" : main2.py
-    "[tree] 373171" --> "[blob] bdecdd" : plantuml.jar
-    "[tree] 373171" --> "[blob] ebe1f8" : visualizer.py
-    "[commit] 02d256" --> "[commit] 37e370"
-    "[commit] 37e370" --> "[tree] 937ffe"
-    "[tree] 937ffe" --> "[blob] eb7754" : config.json
-    "[tree] 937ffe" --> "[blob] 4e1463" : config.toml
-    "[tree] 937ffe" --> "[blob] b14e34" : main.py
-    "[tree] 937ffe" --> "[blob] dc1e56" : main2.py
+    "[tree] 14f3ff" --> "[blob] e98e53" : config.toml
+    "[tree] 14f3ff" --> "[blob] 75c4ad" : graph.png
+    "[tree] 14f3ff" --> "[blob] 5d908e" : graph.puml
+    "[tree] 14f3ff" --> "[blob] e04542" : main.py
+    "[tree] 14f3ff" --> "[blob] b815d6" : main2.py
+    "[tree] 14f3ff" --> "[blob] bdecdd" : plantuml.jar
+    "[tree] 14f3ff" --> "[blob] ebe1f8" : visualizer.py
 @enduml
