@@ -24,44 +24,24 @@
 JAR-файл и Java Development Kit (файлы формата JAR запускаются именно с помощью Java для генерации различных диаграмм)
 
 Основной файл, который запускает программу и координирует ее работу, использует 3 вспомогательных модуля и файл конфигурации:
-1. main.py - модуль, который парсит папки git-репозитория и извлекате из них информацию.
-2. plantuml_generator.py - модуль, принимающий список коммитов из git_parser. Генерирует текстовый файл в формате .puml, в котором описан граф, где каждый коммит и его родитель соединены стрелками.
-3. visualizer.py - модуль, обрабатывающий .puml файл. Инициализируется с путями к .jar файлу и java, создает изображение, представляющее диаграмму
+1. main.py - модуль, который парсит папки git-репозитория и извлекает из них информацию, а также строит по этой информации файл graph.puml.
+3. visualizer.py - модуль, обрабатывающий graph.puml файл. Инициализируется с путями к .jar файлу и java, создает изображение, представляющее диаграмму
 4. config.toml - конфигурационный файл, в котором указывается путь до .jar файла и java, а также дата с которой необходимо отслеживать коммиты.
    
 ## Запуск
 Запуск программы поддерживается как из командной строки так и из среды разработки. 
 1. В config.toml указываем необходимые пути и дату
-2. В visualizer.py указываем на 7 и 13 строчках путь до java.exe
-3. Запускаем main.py
-4. Созданный .puml файл:
+2. Запускаем main.py
+3. Созданный .puml файл:
    
   ![Screenshot 1](https://github.com/whiteicesky/commit-parser/blob/master/Screenshot_1.png)
 
-5. Созданная диаграмма:
+4. Созданная диаграмма:
    
-  ![Screenshot 1](https://github.com/whiteicesky/commit-parser/blob/master/output.png)
-
-Также для демонстрации работоспособности программы в ручную изменю .puml файл
-
-  ![Screenshot 1](https://github.com/whiteicesky/commit-parser/blob/master/Screenshot_3.png)
-
-И с помощью следующей команды в консоли
-
-  ![Screenshot 1](https://github.com/whiteicesky/commit-parser/blob/master/Screenshot_2.png)
-
-Создам новую диаграмму
-
-  ![Screenshot 1](https://github.com/whiteicesky/commit-parser/blob/master/output2.png)
+  ![Screenshot 2](https://github.com/whiteicesky/commit-parser/blob/master/output.png)
 
 ## Тесты
-1. В консоли сменить директорию на ./commit-parser
-3. Запустить тесты следующей командой
-   
-   ```
-    python -m unittest discover -s tests
-   ```
-Результат:
+Результат тестов:
 
 ![Screenshot 2](https://github.com/whiteicesky/commit-parser/blob/master/Screenshot_4.png)
 
